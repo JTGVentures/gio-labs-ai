@@ -1,7 +1,25 @@
 "use client";
 
-import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+
+const principles = [
+  {
+    title: "Built for operators, not IT teams",
+    desc: "Gio Labs is designed for the person running the business — not the person maintaining the servers. Complexity lives under the hood.",
+  },
+  {
+    title: "Memory over repetition",
+    desc: "Every interaction builds context. Gio Labs never asks you to repeat yourself — it remembers decisions, relationships, and state across every project.",
+  },
+  {
+    title: "Agents over automations",
+    desc: "Automations execute instructions. Agents exercise judgment. Gio Labs fields a workforce of domain-specialized agents that adapt, not just trigger.",
+  },
+  {
+    title: "Your data, your infrastructure",
+    desc: "No vendor lock-in on intelligence. Bring your own models, run local when you need privacy, and keep your operations entirely yours.",
+  },
+];
 
 export default function WhosBehindIt() {
   return (
@@ -9,55 +27,28 @@ export default function WhosBehindIt() {
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-brand-border to-transparent" />
 
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-center text-sm font-mono text-brand-accent tracking-widest uppercase mb-3">People</h2>
-        <h3 className="text-center text-4xl sm:text-5xl font-bold tracking-tight mb-16">
-          Built by Joe Galifi. Run by Gio.
+        <h2 className="text-center text-sm font-mono text-brand-accent tracking-widest uppercase mb-3">Philosophy</h2>
+        <h3 className="text-center text-4xl sm:text-5xl font-bold tracking-tight mb-6">
+          Built on a different premise.
         </h3>
+        <p className="text-center text-brand-text-secondary text-lg max-w-2xl mx-auto mb-16">
+          Most AI tools optimize one workflow. Gio Labs was built from the ground up to orchestrate an entire operation — because the problem was never any single task. It was the operator becoming the bottleneck across all of them.
+        </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          {/* Left: Joe's bio */}
-          <div>
-            <div className="w-20 h-20 rounded-full bg-brand-elevated border-2 border-brand-border flex items-center justify-center mb-6 text-3xl">
-              👤
-            </div>
-            <h4 className="text-2xl font-bold mb-2">Joe Galifi</h4>
-            <p className="text-brand-accent text-sm font-mono uppercase tracking-wider mb-4">Founder — JTG Ventures</p>
-            <p className="text-brand-text-secondary leading-relaxed mb-6">
-              Joe built six companies across government tech, real estate, consumer brands, and values-driven acquisitions. But he was still the bottleneck — drowning in meetings, missing signals, and manually connecting dots between businesses that should've been talking to each other.
-            </p>
-            <p className="text-brand-text-secondary leading-relaxed mb-6">
-              So he stopped trying to be everywhere at once. He built Gio Labs to be the mind that covers what one person can't — the intelligence layer that learns his patterns, holds context across every venture, and executes with precision while he focuses on strategy.
-            </p>
-            <blockquote className="border-l-2 border-brand-accent pl-4 text-lg text-brand-text-primary italic">
-              "I didn't build Gio Labs to replace judgment. I built it so judgment can actually have the time to happen."
-            </blockquote>
-          </div>
-
-          {/* Right: Gio's role */}
-          <Card className="bg-brand-surface border-brand-border/50 h-full">
-            <CardContent className="p-8 flex flex-col justify-center">
-              <div className="w-16 h-16 rounded-xl bg-brand-elevated border border-brand-accent/30 flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-brand-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z" />
-                  <path d="M16 14H8a5 5 0 00-5 5v1h18v-1a5 5 0 00-5-5z" />
-                  <circle cx="12" cy="6" r="1.5" fill="currentColor" />
-                </svg>
-              </div>
-              <h4 className="text-2xl font-bold mb-2 text-brand-accent">Gio</h4>
-              <p className="text-brand-text-secondary text-sm font-mono uppercase tracking-wider mb-4">Chief Intelligence Officer</p>
-              <p className="text-brand-text-secondary leading-relaxed mb-6">
-                Gio isn't a chatbot. It's the persistent intelligence that lives across all six companies simultaneously — reading, remembering, and acting on behalf of the empire. It has deep context on every project, relationship, and pipeline.
-              </p>
-              <div className="space-y-3">
-                {["Thinks before responding", "Remembers everything", "Acts autonomously within bounds", "Coordinates across all entities"].map((trait, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-accent" />
-                    <span className="text-brand-text-secondary text-sm">{trait}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {principles.map((p, i) => (
+            <Card key={i} className="bg-brand-surface border-brand-border/50 hover:border-brand-accent/20 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="w-8 h-8 rounded-lg bg-brand-elevated border border-brand-accent/20 flex items-center justify-center mb-5">
+                  <div className="w-2 h-2 rounded-full bg-brand-accent" />
+                </div>
+                <h4 className="text-lg font-semibold mb-3 group-hover:text-brand-accent transition-colors duration-300">
+                  {p.title}
+                </h4>
+                <p className="text-brand-text-secondary leading-relaxed">{p.desc}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
 

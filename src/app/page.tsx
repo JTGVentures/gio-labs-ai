@@ -22,7 +22,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-brand-border/30 text-center">
         <p className="text-brand-text-secondary/50 text-sm font-mono">
-          © {new Date().getFullYear()} Gio Labs — JTG Ventures. All rights reserved.
+          © {new Date().getFullYear()} Gio Labs. All rights reserved.
         </p>
       </footer>
     </main>

@@ -31,10 +31,10 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6 bg-gradient-to-r from-white via-brand-text-primary to-brand-accent bg-clip-text text-transparent">
-          The intelligence layer running an empire.
+          The intelligence layer running your operation.
         </h1>
         <p className="text-lg sm:text-xl text-brand-text-secondary max-w-2xl mx-auto leading-relaxed mb-10">
-          Gio Labs is the AI operating system behind JTG Ventures — a living network of agents, memory systems, and automation pipelines that think, remember, and execute across every business Joe Galifi builds. It&apos;s not software you open; it&apos;s intelligence that never sleeps, quietly orchestrating six companies from one mind.
+          Gio Labs is the AI operating system for the modern operator — a living network of agents, memory systems, and automation pipelines that think, remember, and execute across every business you run. It&apos;s not software you open; it&apos;s intelligence that never sleeps, quietly orchestrating your entire operation from one unified mind.
         </p>
         <a
           href="#demo"

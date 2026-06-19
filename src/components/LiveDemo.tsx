@@ -9,16 +9,16 @@ interface DemoLine {
 }
 
 const demoLines: DemoLine[] = [
-  { prefix: "[SIGNAL]", text: "Scout job triggered — Genosis RFP detected", color: "#00e5ff" },
+  { prefix: "[SIGNAL]", text: "Scout job triggered — enterprise RFP detected", color: "#00e5ff" },
   { prefix: "[MEMORY]", text: "Loading project context: genosis/CONTEXT.md", color: "#a080ff" },
   { prefix: "[MEMORY]", text: "Loaded 3-layer memory graph (2.4k nodes)", color: "#a080ff" },
   { prefix: "[AGENT]", text: "GLS — GL-Scout analyzing proposal requirements", color: "#ffa726" },
   { prefix: "[AGENT]", text: "GLF — GL-Forge drafting technical response", color: "#e040fb" },
   { prefix: "[EXECUTE]", text: "Generating competitive analysis matrix", color: "#00e5a0" },
-  { prefix: "[EXECUTE]", text: "Compiling pricing strategy from Galifi models", color: "#00e5a0" },
+  { prefix: "[EXECUTE]", text: "Compiling pricing strategy from deal models", color: "#00e5a0" },
   { prefix: "[MEMORY]", text: "Updating project state — deal pipeline v3.2", color: "#a080ff" },
   { prefix: "[COMMUNICATE]", text: "Drafting 3-day overview for founder review", color: "#ff5252" },
-  { prefix: "[DELIVER]", text: "research@jtgventuresco.com ✓", color: "#00e5a0" },
+  { prefix: "[DELIVER]", text: "founder@yourdomain.com ✓", color: "#00e5a0" },
 ];
 
 export default function LiveDemo() {

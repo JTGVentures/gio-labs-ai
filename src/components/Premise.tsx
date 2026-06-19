@@ -24,7 +24,7 @@ export default function Premise() {
             Every founder hits the same ceiling: time. You can&apos;t be in every meeting, review every deal, and stay on top of every detail — no matter how many tools you layer on top. The bottleneck isn&apos;t your strategy. It&apos;s yourself.
           </p>
           <p>
-            Gio Labs was built to remove that ceiling. It&apos;s not another SaaS dashboard or a prompt library. It&apos;s the connective layer between every business in JTG Ventures — a persistent intelligence that learns, remembers context across entities, and executes on your behalf.
+            Gio Labs was built to remove that ceiling. It&apos;s not another SaaS dashboard or a prompt library. It&apos;s the connective layer across every business you run — a persistent intelligence that learns, remembers context across entities, and executes on your behalf.
           </p>
           <p>
             While other automations wake up when triggered, Gio Labs is always on. It watches signals across email, calendar, docs, and data feeds. When it detects an opportunity or risk, it doesn&apos;t wait for permission — it drafts the response, surfaces the analysis, and moves forward within guardrails you set once.
