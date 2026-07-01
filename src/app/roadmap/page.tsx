@@ -17,7 +17,7 @@ const milestones = [
   },
   {
     title: "More template drops",
-    detail: "Additional dashboards, landing pages, diagrams, rails, and agent UI components from real JTG workflows.",
+    detail: "Additional dashboards, landing pages, diagrams, rails, and agent UI components from real operator workflows.",
   },
   {
     title: "Preview environments",

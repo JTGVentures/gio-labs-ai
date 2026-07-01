@@ -14,7 +14,7 @@ export default function Home() {
             Build faster with Gio Labs&apos; production-tested templates, kits, and agent tools
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
-            Browse Next.js templates, reusable UI kits, free tools, and agent-ready operating prompts drawn from the stack running Joe Galifi and JTG Ventures.
+            Browse Next.js templates, reusable UI kits, free tools, and agent-ready operating prompts built from real production-grade operator stacks.
           </p>
           <form action="/templates" className="relative mt-10 w-full max-w-2xl">
             <Search className="absolute left-5 top-1/2 size-5 -translate-y-1/2 text-muted-foreground" />

@@ -79,7 +79,7 @@ export function ProductDetailLayout({ product }: { product: Product }) {
               ))}
             </ul>
             <p className="mt-8 text-lg leading-9 text-muted-foreground">
-              Every Gio Labs asset is built from real operator patterns used across Joe Galifi, JTG Ventures, and the Gio Labs agent stack.
+              Every Gio Labs asset is built from real operator patterns used across production companies and the Gio Labs agent stack.
             </p>
             <div className="mt-12">
               <CodePanel product={product} />

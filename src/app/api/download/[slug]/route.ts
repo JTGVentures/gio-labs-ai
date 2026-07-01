@@ -34,10 +34,10 @@ export async function GET(_request: Request, context: RouteContext) {
 
 ${product.description}
 
-Built by Gio Labs / JTG Ventures.
+Built by Gio Labs.
 `,
   );
-  zip.file("LICENSE", "MIT License\n\nCopyright (c) 2026 Gio Labs / JTG Ventures\n");
+  zip.file("LICENSE", "MIT License\n\nCopyright (c) 2026 Gio Labs\n");
   const buffer = await zip.generateAsync({ type: "arraybuffer" });
 
   return new NextResponse(buffer, {

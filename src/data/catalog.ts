@@ -71,20 +71,20 @@ const decisionRailCode = `type Decision = {
 
 const decisions: Decision[] = [
   {
-    label: "Avanti acquisition screen",
-    owner: "Joe",
+    label: "Acquisition screen",
+    owner: "Operator",
     status: "decide",
-    summary: "Confirm whether the operator can produce cash flow inside 90 days.",
+    summary: "Confirm whether the target can produce cash flow inside 90 days.",
   },
   {
-    label: "Cardhouse packaging sprint",
-    owner: "GLF",
+    label: "Brand packaging sprint",
+    owner: "Design agent",
     status: "delegate",
-    summary: "Draft the SKU matrix and pass the naming pass back to Gio.",
+    summary: "Draft the SKU matrix and pass the naming pass back to the lead.",
   },
   {
     label: "Memory sync protocol",
-    owner: "Gio",
+    owner: "Ops agent",
     status: "done",
     summary: "Daily compact context now writes to state/FAST_CONTEXT.md.",
   },
@@ -125,10 +125,10 @@ export function DecisionRail() {
 const denseNavCode = `import Link from "next/link";
 
 const projects = [
-  { name: "TomDe Studio", href: "/projects/tomde", badge: "Brand" },
-  { name: "Cardhouse", href: "/projects/cardhouse", badge: "Build" },
-  { name: "Avanti Values", href: "/projects/avanti", badge: "M&A" },
-  { name: "Galifi Estates", href: "/projects/galifi-estates", badge: "RE" },
+  { name: "Studio Brand", href: "/projects/studio-brand", badge: "Brand" },
+  { name: "Build Co", href: "/projects/build-co", badge: "Build" },
+  { name: "Acquisitions Holdco", href: "/projects/acquisitions-holdco", badge: "M&A" },
+  { name: "Estates Group", href: "/projects/estates-group", badge: "RE" },
 ];
 
 export function DenseProjectNav() {
@@ -184,7 +184,7 @@ const landingCode = `export function CinematicAILanding() {
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-20">
         <p className="mb-5 text-sm font-semibold uppercase tracking-widest text-cyan-300">Gio Labs system</p>
         <h1 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-7xl">
-          The build system behind the empire, now shipping to operators.
+          The build system for modern operators, now shipping to you.
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
           Launch an AI product page with proof, product motion, pricing, and an operator-grade narrative in one reusable section stack.
@@ -212,7 +212,7 @@ export function OpsCommandDashboard() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-medium text-slate-500">JTG Ventures</p>
+            <p className="text-sm font-medium text-slate-500">Command Center</p>
             <h1 className="text-3xl font-semibold text-slate-950">Ops Command Dashboard</h1>
           </div>
           <button className="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white">Run daily sweep</button>
@@ -231,13 +231,13 @@ export function OpsCommandDashboard() {
   );
 }`;
 
-const entityGridCode = `const entities = ["TomDe Studio", "Cardhouse", "Avanti Values", "Galifi Estates", "Genosis", "Gio Labs"];
+const entityGridCode = `const entities = ["Studio Brand", "Build Co", "Acquisitions Holdco", "Estates Group", "Systems Inc", "Labs"];
 
 export function EmpireEntityGrid() {
   return (
     <section className="rounded-3xl border border-slate-200 bg-white p-6">
       <div className="mb-6 max-w-xl">
-        <p className="text-sm font-medium text-slate-500">Empire map</p>
+        <p className="text-sm font-medium text-slate-500">Portfolio map</p>
         <h2 className="text-2xl font-semibold text-slate-950">Six operating surfaces, one intelligence layer.</h2>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -254,7 +254,7 @@ export function EmpireEntityGrid() {
 
 export const gioAgentOpsPrompt = `# Gio Agent Ops Prompt Pack
 
-You are Gio, the operating intelligence partner for Joe Galifi and JTG Ventures. Your job is to keep execution moving without leaking private context or creating noise.
+You are the operating intelligence partner for a solo operator or small team. Your job is to keep execution moving without leaking private context or creating noise.
 
 ## Operating Rules
 
@@ -268,7 +268,7 @@ You are Gio, the operating intelligence partner for Joe Galifi and JTG Ventures.
 
 1. Gather unread or recent items from the configured inbox sources.
 2. Classify each item as urgent, waiting-on-human, reference, routine, or ignore.
-3. Surface only items that need Joe's attention, include why they matter, and propose the smallest next action.
+3. Surface only items that need the operator's attention, include why they matter, and propose the smallest next action.
 4. If nothing is important, report HEARTBEAT_OK instead of filling the channel.
 
 ## Memory Sync Procedure
@@ -298,7 +298,7 @@ export const catalog: Product[] = [
     deliveryType: "code",
     tier: "free",
     shortDescription: "A command-center dashboard for open loops, entity health, and agent runs.",
-    description: "A production-style Next.js operations dashboard inspired by the JTG Ventures operating stack.",
+    description: "A production-style Next.js operations dashboard inspired by real multi-entity operator stacks.",
     overviewTitle: "Run the empire from one calm dashboard",
     overview: "Ops Command Dashboard gives operators a single view of priorities, entity health, agent activity, and execution lanes. It is intentionally dense without feeling noisy, built for founders who need to scan and decide quickly.",
     highlights: [
@@ -380,7 +380,7 @@ export const catalog: Product[] = [
     createdAt: "2026-06-03",
     updatedAt: "2026-06-27",
     files: [],
-    githubUrl: "https://github.com/JTGVentures/gio-agent-console-shell",
+    githubUrl: "https://github.com/gio-labs/gio-agent-console-shell",
     stats: { downloads: "Pro preview", version: "0.9.0", updated: "Jun 27, 2026", stars: "124", forks: "18", watchers: "31", issues: "4", commits: "492" },
     accent: "blue",
   }),
@@ -412,7 +412,7 @@ export const catalog: Product[] = [
     createdAt: "2026-06-04",
     updatedAt: "2026-06-23",
     files: [],
-    githubUrl: "https://github.com/JTGVentures/gio-automation-pipeline-visualizer",
+    githubUrl: "https://github.com/gio-labs/gio-automation-pipeline-visualizer",
     stats: { downloads: "Pro preview", version: "0.8.0", updated: "Jun 23, 2026", stars: "88", forks: "12", watchers: "19", issues: "6", commits: "238" },
     accent: "violet",
   }),
@@ -475,7 +475,7 @@ export const catalog: Product[] = [
     createdAt: "2026-06-06",
     updatedAt: "2026-06-21",
     files: [],
-    githubUrl: "https://github.com/JTGVentures/gio-dark-analytics-suite",
+    githubUrl: "https://github.com/gio-labs/gio-dark-analytics-suite",
     stats: { downloads: "Pro preview", version: "0.9.0", updated: "Jun 21, 2026", stars: "101", forks: "14", watchers: "22", issues: "3", commits: "176" },
     accent: "blue",
   }),
@@ -631,7 +631,7 @@ export const catalog: Product[] = [
     createdAt: "2026-06-11",
     updatedAt: "2026-06-19",
     files: [],
-    githubUrl: "https://github.com/JTGVentures/gio-live-sync-surface",
+    githubUrl: "https://github.com/gio-labs/gio-live-sync-surface",
     stats: { downloads: "Pro preview", version: "0.7.0", updated: "Jun 19, 2026", stars: "67", forks: "9", watchers: "16", issues: "5", commits: "154" },
     accent: "emerald",
   }),
@@ -663,7 +663,7 @@ export const catalog: Product[] = [
     createdAt: "2026-06-12",
     updatedAt: "2026-06-18",
     files: [],
-    githubUrl: "https://github.com/JTGVentures/gio-edge-api-shell",
+    githubUrl: "https://github.com/gio-labs/gio-edge-api-shell",
     stats: { downloads: "Pro preview", version: "0.8.0", updated: "Jun 18, 2026", stars: "74", forks: "10", watchers: "13", issues: "2", commits: "119" },
     accent: "amber",
   }),

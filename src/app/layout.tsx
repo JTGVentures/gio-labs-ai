@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gio Labs — Production-tested templates, kits, and agent tools",
   description:
-    "Gio Labs ships the build system behind the JTG Ventures empire: Next.js templates, UI kits, free tools, and agent-ready operating prompts.",
+    "Gio Labs ships production-tested Next.js templates, UI kits, free tools, and agent-ready operating prompts for modern builders.",
   metadataBase: new URL("https://giolabs.ai"),
   openGraph: {
     title: "Gio Labs",
