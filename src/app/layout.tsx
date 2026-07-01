@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gio Labs AI — The Intelligence Layer Running an Empire",
+  title: "Gio Labs — Production-tested templates, kits, and agent tools",
   description:
-    "Gio Labs is the AI operating system for the modern operator — a living network of agents, memory systems, and automation pipelines that think, remember, and execute across every business you run. Most people automate tasks. Gio Labs automates the operation.",
+    "Gio Labs ships the build system behind the JTG Ventures empire: Next.js templates, UI kits, free tools, and agent-ready operating prompts.",
   metadataBase: new URL("https://giolabs.ai"),
   openGraph: {
-    title: "Gio Labs AI",
-    description: "The intelligence layer running your operation.",
+    title: "Gio Labs",
+    description: "Production-tested templates, kits, and agent tools from Gio Labs.",
     type: "website",
   },
 };
@@ -31,8 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-brand-bg text-brand-text-primary antialiased">
-        {children}
+      <body className="min-h-full bg-background text-foreground antialiased">
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );

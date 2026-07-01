@@ -7,108 +7,74 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 
-  /* Gio Labs brand tokens */
-  --color-brand-bg: #0a0a0a;
-  --color-brand-surface: #111111;
-  --color-brand-elevated: #1a1a1a;
-  --color-brand-accent: #00e5ff;
-  --color-brand-text-primary: #f0f0f0;
-  --color-brand-text-secondary: #888888;
-  --color-brand-border: #222222;
-
-  /* Override defaults for dark theme */
-  --color-card: var(--brand-surface);
-  --color-card-foreground: var(--brand-text-primary);
-  --color-popover: var(--brand-bg);
-  --color-popover-foreground: var(--brand-text-primary);
-  --color-primary: var(--brand-accent);
-  --color-primary-foreground: var(--brand-bg);
-  --color-secondary: var(--brand-elevated);
-  --color-secondary-foreground: var(--brand-text-primary);
-  --color-muted: var(--brand-surface);
-  --color-muted-foreground: var(--brand-text-secondary);
-  --color-accent: var(--brand-accent);
-  --color-accent-foreground: var(--brand-bg);
-  --color-border: var(--brand-border);
-  --color-input: var(--brand-border);
-  --color-ring: var(--brand-accent);
-
-  /* Chart colors override */
-  --chart-1: oklch(0.53 0.27 204.41);
-  --chart-2: oklch(0.6 0.15 163.16);
-  --chart-3: oklch(0.7 0.2 140);
-  --chart-4: oklch(0.8 0.25 100);
-  --chart-5: oklch(0.9 0.2 60);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-brand-bg: var(--color-bg);
+  --color-brand-surface: var(--color-bg-subtle);
+  --color-brand-elevated: var(--color-bg-muted);
+  --color-brand-accent: var(--color-accent);
+  --color-brand-text-primary: var(--color-text-primary);
+  --color-brand-text-secondary: var(--color-text-secondary);
+  --color-brand-border: var(--color-border);
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #f0f0f0;
-  --card: #111111;
-  --card-foreground: #f0f0f0;
-  --popover: #0a0a0a;
-  --popover-foreground: #f0f0f0;
-  --primary: #00e5ff;
-  --primary-foreground: #0a0a0a;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #f0f0f0;
-  --muted: #111111;
-  --muted-foreground: #888888;
-  --accent: #00e5ff;
-  --accent-foreground: #0a0a0a;
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: #222222;
-  --input: #222222;
-  --ring: #00e5ff;
-  --chart-1: oklch(0.53 0.27 204.41);
-  --chart-2: oklch(0.6 0.15 163.16);
-  --chart-3: oklch(0.7 0.2 140);
-  --chart-4: oklch(0.8 0.25 100);
-  --chart-5: oklch(0.9 0.2 60);
-  --radius: 0.625rem;
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #F8FAFC;
+  --color-bg-muted: #F1F5F9;
+  --color-border: #E7EAEE;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-tertiary: #94A3B8;
+  --color-accent: #111111;
+  --color-accent-hover: #000000;
+  --color-accent-soft: #F1F5F9;
+  --color-success: #16A34A;
+  --color-danger: #DC2626;
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text-primary);
+  --card: var(--color-bg);
+  --card-foreground: var(--color-text-primary);
+  --popover: var(--color-bg);
+  --popover-foreground: var(--color-text-primary);
+  --primary: var(--color-accent);
+  --primary-foreground: var(--color-bg);
+  --secondary: var(--color-bg-subtle);
+  --secondary-foreground: var(--color-text-primary);
+  --muted: var(--color-bg-muted);
+  --muted-foreground: var(--color-text-secondary);
+  --accent: var(--color-accent);
+  --accent-foreground: var(--color-bg);
+  --destructive: var(--color-danger);
+  --border: var(--color-border);
+  --input: var(--color-border);
+  --ring: var(--color-accent);
+  --success: var(--color-success);
+  --danger: var(--color-danger);
+  --radius: 0.875rem;
 }
 
-.dark {
-  --background: #0a0a0a;
-  --foreground: #f0f0f0;
-  --card: #111111;
-  --card-foreground: #f0f0f0;
-  --popover: #0a0a0a;
-  --popover-foreground: #f0f0f0;
-  --primary: #00e5ff;
-  --primary-foreground: #0a0a0a;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #f0f0f0;
-  --muted: #111111;
-  --muted-foreground: #888888;
-  --accent: #00e5ff;
-  --accent-foreground: #0a0a0a;
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: #222222;
-  --input: #222222;
-  --ring: #00e5ff;
-}
-
-@keyframes pulse-border {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 229, 255, 0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(0, 229, 255, 0); }
-}
-
-@keyframes node-pulse {
-  0%, 100% { r: 2; opacity: 0.6; }
-  50% { r: 3.5; opacity: 1; }
-}
-
-@keyframes line-draw {
-  from { stroke-dashoffset: 100; }
-  to { stroke-dashoffset: 0; }
-}
-
-.pulse-border {
-  animation: pulse-border 2s ease-in-out infinite;
+* {
+  border-color: var(--border);
 }
 
 html {
@@ -116,22 +82,29 @@ html {
 }
 
 body {
-  @apply bg-brand-bg text-foreground font-sans antialiased;
+  @apply bg-background text-foreground font-sans antialiased;
 }
 
-/* Section reveal animation base */
-.section-reveal {
-  opacity: 0;
-  transform: translateY(32px);
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 72px 72px;
 }
 
-.section-reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+.subtle-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--border), transparent 45%) 0,
+    color-mix(in srgb, var(--border), transparent 45%) 1px,
+    transparent 1px,
+    transparent 8px
+  );
 }
 
-/* Terminal glow */
-.terminal-glow {
-  box-shadow: 0 0 40px rgba(0, 229, 255, 0.08);
+.token-gradient {
+  background:
+    radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--accent), transparent 90%), transparent 28%),
+    radial-gradient(circle at 80% 10%, color-mix(in srgb, var(--success), transparent 88%), transparent 24%),
+    var(--muted);
 }
